@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    body {
+        font-family: 'Lato', global_font_string;
+        font-weight: 500;
+        background-color: #081c15;
+        color: whitesmoke;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pro {
+        color: black;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+</style>
+
+
+<div class="container pro">
+
+    <div class="row">
+        {% for prof in profiles %}
+    <!-- <div class="card col-md-3 m-3 text-left">
+        
+        {% if prof.profile_photo %}
+        <img src="{{prof.profile_photo.url}}" alt="" style="border-radius: 50%; width: 50%; height: auto;">
+        {%else%}
+        <img src="https://st2.depositphotos.com/1104517/11965/v/600/depositphotos_119659092-stock-illustration-female-avatar-profile-picture-vector.jpg"
+            class="card-img-top" alt="My profile picture">
+        {% endif %}
+        <div class="card-body">
+
+            <p>Username: {{ prof.user.username }}</p>
+
+            <p>
+                {% if profile.bio %}
+                <small>Bio: {{ prof.bio }}</small>
+                {% else %}
+                <span class="text-danger">No about me</span>
+                {% endif %}
+            </p>
+
+            <p>Contact: {{ prof.contact }}</p>
+            <p>Location: {{ prof.location }}</p>
+            <p>Neighborhood: {{ prof.neighborhood }}</p>
+            <h6>Joined on: <span class="badge rounded-pill bg-secondary text-white">
+                    {{ user.date_joined|date }} </span></h6>
+            
+        </div>
+
+    </div>
+    {% endfor %}
+
+    </div>
+</div>
+    {% endblock %} -->
