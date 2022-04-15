@@ -1,0 +1,40 @@
+{%extends 'base.html'%}
+{% load static %}
+{% load bootstrap4 %}
+{% block styles %}
+{{ block.super}}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- <style>
+    body{
+    font-family: 'Lato', global_font_string;
+    font-weight: 500;
+    background-color: #081c15;
+    color: whitesmoke;
+    }
+   
+    .hood{
+        margin-top: 5%;
+    }
+</style>
+
+<div class="container hood">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="prof-body">
+                <form action="{% url 'create_hood'%}" method="post" enctype="multipart/form-data">
+                    {% load crispy_forms_tags %}
+                    {{ hood_form | crispy }}
+                    {% csrf_token %}
+                    <div class="form-group text-center">
+                        <input type="submit" class="m-4 btn btn-primary login-btn" value="CREATE HOOD">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %} -->
